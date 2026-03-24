@@ -1,0 +1,22 @@
+{
+  "config": "/home/wyy/my_work/adflip_affinity/affinity/configs/base.yaml",
+  "ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/single_dataset/Koenig2017_g6_Kd/best.ckpt",
+  "eval_split": "test",
+  "eval_dataset": "Shanehsazzadeh2023_trastuzumab_zero_kd",
+  "eval_csv": "/home/wyy/my_work/adflip_affinity/affinity/outputs/prepared/Shanehsazzadeh2023_trastuzumab_zero_kd/test.csv",
+  "pdb_dir": "/home/wyy/my_work/structure/Shanehsazzadeh2023_trastuzumab_zero_kd",
+  "list_size": null,
+  "num_units": 1,
+  "num_rows": 43,
+  "metrics": {
+    "test_loss": 1.1072977781295776,
+    "test_kl": 0.010772280395030975,
+    "test_mse": 20.54395866394043,
+    "test_rank_loss": 0.6932758688926697,
+    "test_rank_weight": 0.1,
+    "test_rmse": 4.5325446128845215,
+    "test_spearman": -0.03292056918144226,
+    "test_pearson": -0.04247700050473213,
+    "test_top_hit": 0.0
+  }
+}

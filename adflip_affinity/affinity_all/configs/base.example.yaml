@@ -1,0 +1,48 @@
+adflip_root: ../../ADFLIP
+adflip_ckpt: ../../ADFLIP/results/weights/ADFLIP_ICML_camera_ready.pt
+
+data:
+  manifest: ./data/prepared/manifest.csv
+  datasets:
+    - Shanehsazzadeh2023_trastuzumab_zero_kd
+    - Warszawski2019_d44_Kd
+    - Koenig2017_g6_Kd
+  pdb_col: pdb_abs
+  y_col: label_neglog_m
+  seq_col: sequence
+  chains: ["H", "L"]
+
+model:
+  freeze_backbone: true
+  timestep: 0.0
+  affinity_head_use_lightattn: true
+  affinity_head_lightattn_dropout: 0.2
+
+training:
+  seed: 42
+  epochs: 20
+  steps_per_epoch: 368
+  list_size: 12
+
+  learn_rate: 0.0001
+  backbone_learn_rate: 0.00001
+  weight_decay: 0.0
+  grad_clip_norm: 1.0
+
+  tau_true: 1.0
+  tau_pred: 1.0
+  kl_weight: 1.0
+  mse_weight: 0.05
+  rank_weight: 0.1
+  rank_margin: 0.0
+  rank_tie_eps: 1.0e-8
+  rank_warmup_epochs: 3
+
+  sampling_mode: uniform
+  dataset_probs: {}
+
+  early_stopping_enabled: false
+  early_stopping_patience: 8
+  early_stopping_min_delta: 1.0e-4
+
+  output_root: ./outputs

@@ -1,0 +1,26 @@
+adflip_root: /home/wyy/my_work/ADFLIP
+adflip_ckpt: /home/wyy/my_work/ADFLIP/results/weights/ADFLIP_ICML_camera_ready.pt
+
+data:
+  # Use manifest + dataset_name by default; explicit paths can override.
+  manifest: /home/wyy/my_work/adflip_affinity/affinity/outputs/prepared/manifest.csv
+  dataset_name: Shanehsazzadeh2023_trastuzumab_zero_kd
+
+  train_csv: ""
+  val_csv: ""
+  test_csv: ""
+  pdb_dir: ""
+
+  pdb_col: pdb
+  seq_col: sequence
+  y_col: KD
+  label_mode: neg_log10
+  chains: ["H", "L"]
+
+model:
+  timestep: 0.0
+
+evaluation:
+  eval_split: test
+  topk: 5
+  output_dir: /home/wyy/my_work/adflip_affinity/zero_shot/outputs

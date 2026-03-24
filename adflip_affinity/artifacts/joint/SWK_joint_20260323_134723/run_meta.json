@@ -1,0 +1,38 @@
+{
+  "run_name": "SWK_joint_20260323_134723",
+  "config": "/home/wyy/my_work/adflip_affinity/affinity_all/configs/base.yaml",
+  "seed": 42,
+  "device": "cuda",
+  "datasets": [
+    "Shanehsazzadeh2023_trastuzumab_zero_kd",
+    "Warszawski2019_d44_Kd",
+    "Koenig2017_g6_Kd"
+  ],
+  "train_group_counts": {
+    "Shanehsazzadeh2023_trastuzumab_zero_kd": 28,
+    "Warszawski2019_d44_Kd": 137,
+    "Koenig2017_g6_Kd": 203
+  },
+  "val_group_counts": {
+    "Shanehsazzadeh2023_trastuzumab_zero_kd": 4,
+    "Warszawski2019_d44_Kd": 17,
+    "Koenig2017_g6_Kd": 26
+  },
+  "sampling_probs": {
+    "Shanehsazzadeh2023_trastuzumab_zero_kd": 0.3333333333333333,
+    "Warszawski2019_d44_Kd": 0.3333333333333333,
+    "Koenig2017_g6_Kd": 0.3333333333333333
+  },
+  "steps_per_epoch": 368,
+  "epochs_configured": 20,
+  "best_epoch": 19,
+  "best_macro_spearman": 0.3152042403817177,
+  "best_ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman.ckpt",
+  "last_ckpt": "not_shipped",
+  "load_info": {
+    "missing": [],
+    "unexpected": []
+  },
+  "training_curves_png": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/training_curves.png",
+  "curve_status": "ok"
+}

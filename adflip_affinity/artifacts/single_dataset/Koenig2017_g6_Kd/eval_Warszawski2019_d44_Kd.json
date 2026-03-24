@@ -1,0 +1,22 @@
+{
+  "config": "/home/wyy/my_work/adflip_affinity/affinity/configs/base.yaml",
+  "ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/single_dataset/Koenig2017_g6_Kd/best.ckpt",
+  "eval_split": "test",
+  "eval_dataset": "Warszawski2019_d44_Kd",
+  "eval_csv": "/home/wyy/my_work/adflip_affinity/affinity/outputs/prepared/Warszawski2019_d44_Kd/test.csv",
+  "pdb_dir": "/home/wyy/my_work/structure/Warszawski2019_d44_Kd",
+  "list_size": null,
+  "num_units": 1,
+  "num_rows": 206,
+  "metrics": {
+    "test_loss": 1.165224313735962,
+    "test_kl": 0.006444267928600311,
+    "test_mse": 21.79017448425293,
+    "test_rank_loss": 0.6927127838134766,
+    "test_rank_weight": 0.1,
+    "test_rmse": 4.667994499206543,
+    "test_spearman": 0.16487421095371246,
+    "test_pearson": 0.14342227578163147,
+    "test_top_hit": 0.0
+  }
+}

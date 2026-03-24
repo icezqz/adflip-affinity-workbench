@@ -1,0 +1,25 @@
+adflip_root: ../../ADFLIP
+adflip_ckpt: ../../ADFLIP/results/weights/ADFLIP_ICML_camera_ready.pt
+
+data:
+  manifest: ../affinity/outputs/prepared/manifest.csv
+  dataset_name: Shanehsazzadeh2023_trastuzumab_zero_kd
+
+  train_csv: ""
+  val_csv: ""
+  test_csv: ""
+  pdb_dir: ""
+
+  pdb_col: pdb
+  seq_col: sequence
+  y_col: KD
+  label_mode: neg_log10
+  chains: ["H", "L"]
+
+model:
+  timestep: 0.0
+
+evaluation:
+  eval_split: test
+  topk: 5
+  output_dir: ./outputs

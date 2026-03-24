@@ -1,0 +1,12 @@
+{
+  "dataset_name": "Koenig2017_g6_Kd",
+  "list_size": 12,
+  "batch_size": 1,
+  "train_samples_after_fewshot": 2427,
+  "train_groups_after_fewshot": 203,
+  "val_groups": 26,
+  "train_rows": 2427,
+  "val_rows": 303,
+  "config_path": "/home/wyy/my_work/adflip_affinity/affinity/configs/base.yaml",
+  "best_model_path": "/home/wyy/my_work/adflip_affinity/artifacts/single_dataset/Koenig2017_g6_Kd/best.ckpt"
+}

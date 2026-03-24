@@ -1,0 +1,19 @@
+# Large local assets
+structure/
+
+# Python cache
+**/__pycache__/
+**/*.py[cod]
+
+# Generated experiment outputs
+adflip_affinity/affinity/outputs/
+adflip_affinity/affinity_all/outputs/
+adflip_affinity/zero_shot/outputs/
+ADFLIP/results/weights/
+ADFLIP/PIPPack/model_weights/
+
+# Regenerated prepared splits
+adflip_affinity/affinity_all/data/prepared/
+
+# OS/editor noise
+.DS_Store

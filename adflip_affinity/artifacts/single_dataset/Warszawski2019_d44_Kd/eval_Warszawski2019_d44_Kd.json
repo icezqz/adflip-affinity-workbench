@@ -1,0 +1,22 @@
+{
+  "config": "/home/wyy/my_work/adflip_affinity/affinity/configs/base.yaml",
+  "ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/single_dataset/Warszawski2019_d44_Kd/best.ckpt",
+  "eval_split": "test",
+  "eval_dataset": "Warszawski2019_d44_Kd",
+  "eval_csv": "/home/wyy/my_work/adflip_affinity/affinity/outputs/prepared/Warszawski2019_d44_Kd/test.csv",
+  "pdb_dir": "/home/wyy/my_work/structure/Warszawski2019_d44_Kd",
+  "list_size": null,
+  "num_units": 1,
+  "num_rows": 206,
+  "metrics": {
+    "test_loss": 0.6230671405792236,
+    "test_kl": 0.006415275856852531,
+    "test_mse": 10.952615737915039,
+    "test_rank_loss": 0.6902113556861877,
+    "test_rank_weight": 0.1,
+    "test_rmse": 3.309473752975464,
+    "test_spearman": 0.22104692459106445,
+    "test_pearson": 0.23168160021305084,
+    "test_top_hit": 0.0
+  }
+}

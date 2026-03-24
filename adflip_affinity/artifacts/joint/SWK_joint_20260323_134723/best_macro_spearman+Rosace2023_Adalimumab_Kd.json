@@ -1,0 +1,24 @@
+{
+  "config": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/config.yaml",
+  "ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman.ckpt",
+  "eval_dataset": "Rosace2023_Adalimumab_Kd",
+  "eval_csv": "/home/wyy/my_work/adflip_affinity/affinity_all/data/Rosace2023_Adalimumab_Kd/all.csv",
+  "output_csv": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman+Rosace2023_Adalimumab_Kd.csv",
+  "pdb_col": "pdb_abs",
+  "y_col": "label_neglog_m",
+  "seq_col": "sequence",
+  "list_size": null,
+  "num_units": 1,
+  "num_rows": 14,
+  "metrics": {
+    "test_loss": 17.93082618713379,
+    "test_kl": 0.033777251839637756,
+    "test_mse": 356.54205322265625,
+    "test_rank_loss": 0.6994550228118896,
+    "test_rank_weight": 0.1,
+    "test_rmse": 18.882320404052734,
+    "test_spearman": -0.12087913602590561,
+    "test_pearson": -0.10614507645368576,
+    "test_top_hit": 0.699999988079071
+  }
+}

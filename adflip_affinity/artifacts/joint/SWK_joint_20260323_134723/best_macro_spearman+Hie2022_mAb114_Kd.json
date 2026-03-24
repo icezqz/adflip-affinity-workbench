@@ -1,0 +1,24 @@
+{
+  "config": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/config.yaml",
+  "ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman.ckpt",
+  "eval_dataset": "Hie2022_mAb114_Kd",
+  "eval_csv": "/home/wyy/my_work/adflip_affinity/affinity_all/data/Hie2022_mAb114_Kd/all.csv",
+  "output_csv": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman+Hie2022_mAb114_Kd.csv",
+  "pdb_col": "pdb_abs",
+  "y_col": "label_neglog_m",
+  "seq_col": "sequence",
+  "list_size": null,
+  "num_units": 1,
+  "num_rows": 20,
+  "metrics": {
+    "test_loss": 0.2475413978099823,
+    "test_kl": 0.009989081881940365,
+    "test_mse": 3.3763511180877686,
+    "test_rank_loss": 0.6873475313186646,
+    "test_rank_weight": 0.1,
+    "test_rmse": 1.8374849557876587,
+    "test_spearman": 0.20601503551006317,
+    "test_pearson": 0.4202938973903656,
+    "test_top_hit": 0.6000000238418579
+  }
+}

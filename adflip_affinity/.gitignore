@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Experiment outputs
+affinity/outputs/
+affinity_all/outputs/
+zero_shot/outputs/
+
+# Regenerated prepared data
+affinity_all/data/prepared/
+
+# Local analysis byproducts
+*.svg

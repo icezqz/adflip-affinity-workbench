@@ -1,0 +1,55 @@
+adflip_root: /home/wyy/my_work/ADFLIP
+adflip_ckpt: /home/wyy/my_work/ADFLIP/results/weights/ADFLIP_ICML_camera_ready.pt
+
+data:
+  # 训练数据入口：从 prepared manifest 选择单个数据集，然后自动填充 train/val/test/pdb_dir
+  manifest: /home/wyy/my_work/adflip_affinity/affinity/outputs/prepared/manifest.csv
+  dataset_name: Koenig2017_g6_Kd
+  eval_csv: "/home/wyy/my_work/adflip_affinity/affinity_all/data/prepared/Shanehsazzadeh2023_trastuzumab_zero_kd/test.csv"
+
+  train_csv: ""
+  val_csv: ""
+  test_csv: ""
+  pdb_dir: ""
+  pdb_col: pdb
+  y_col: KD
+  seq_col: sequence
+  label_mode: neg_log10
+  chains: ["H", "L"]
+
+model:
+  freeze_backbone: true
+  timestep: 0.0
+  affinity_head_use_lightattn: true
+  affinity_head_lightattn_dropout: 0.2
+
+training:
+  seed: 42
+  epochs: 15
+  batch_size: 1
+  list_size: 12
+  num_workers: 0
+  learn_rate: 0.0001
+  backbone_learn_rate: 0.00001
+  tau_true: 1.0
+  tau_pred: 1.0
+  kl_weight: 1.0
+  mse_weight: 0.05
+  rank_weight: 0.1
+  rank_margin: 0.0
+  rank_tie_eps: 1.0e-8
+  rank_warmup_epochs: 3
+  topk: 5
+  checkpoint_monitor: val_spearman
+  checkpoint_mode: max
+
+  # few-shot 参数（按样本生效，然后再按 list_size 打包成训练单元）
+  few_shot_enabled: false
+  few_shot_frac: 1.0
+  few_shot_n_samples: 0
+  few_shot_seed: 42
+
+  ckpt_dir: /home/wyy/my_work/adflip_affinity/affinity/outputs/checkpoints
+  log_dir: /home/wyy/my_work/adflip_affinity/affinity/outputs/logs
+  silent: false
+  plot_curves: true

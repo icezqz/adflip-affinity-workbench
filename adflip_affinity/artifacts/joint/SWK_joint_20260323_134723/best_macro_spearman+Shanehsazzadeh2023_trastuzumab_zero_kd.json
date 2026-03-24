@@ -1,0 +1,24 @@
+{
+  "config": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/config.yaml",
+  "ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman.ckpt",
+  "eval_dataset": "Shanehsazzadeh2023_trastuzumab_zero_kd",
+  "eval_csv": "/home/wyy/my_work/adflip_affinity/affinity_all/data/prepared/Shanehsazzadeh2023_trastuzumab_zero_kd/test.csv",
+  "output_csv": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman+Shanehsazzadeh2023_trastuzumab_zero_kd.csv",
+  "pdb_col": "pdb_abs",
+  "y_col": "label_neglog_m",
+  "seq_col": "sequence",
+  "list_size": null,
+  "num_units": 1,
+  "num_rows": 43,
+  "metrics": {
+    "test_loss": 0.12346266210079193,
+    "test_kl": 0.009924305602908134,
+    "test_mse": 1.0529671907424927,
+    "test_rank_loss": 0.6088999509811401,
+    "test_rank_weight": 0.1,
+    "test_rmse": 1.026141881942749,
+    "test_spearman": 0.4405013620853424,
+    "test_pearson": 0.5052962899208069,
+    "test_top_hit": 0.5
+  }
+}

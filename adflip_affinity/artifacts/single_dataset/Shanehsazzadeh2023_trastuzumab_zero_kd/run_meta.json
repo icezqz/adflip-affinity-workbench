@@ -1,0 +1,12 @@
+{
+  "dataset_name": "Shanehsazzadeh2023_trastuzumab_zero_kd",
+  "list_size": 8,
+  "batch_size": 1,
+  "train_samples_after_fewshot": 337,
+  "train_groups_after_fewshot": 42,
+  "val_groups": 6,
+  "train_rows": 337,
+  "val_rows": 42,
+  "config_path": "/home/wyy/my_work/adflip_affinity/affinity/configs/base.yaml",
+  "best_model_path": "/home/wyy/my_work/adflip_affinity/artifacts/single_dataset/Shanehsazzadeh2023_trastuzumab_zero_kd/best.ckpt"
+}

@@ -1,0 +1,24 @@
+{
+  "config": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/config.yaml",
+  "ckpt": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman.ckpt",
+  "eval_dataset": "Rosace2023_Golimumab_Kd",
+  "eval_csv": "/home/wyy/my_work/adflip_affinity/affinity_all/data/Rosace2023_Golimumab_Kd/all.csv",
+  "output_csv": "/home/wyy/my_work/adflip_affinity/artifacts/joint/SWK_joint_20260323_134723/best_macro_spearman+Rosace2023_Golimumab_Kd.csv",
+  "pdb_col": "pdb_abs",
+  "y_col": "label_neglog_m",
+  "seq_col": "sequence",
+  "list_size": null,
+  "num_units": 1,
+  "num_rows": 5,
+  "metrics": {
+    "test_loss": 15.044379234313965,
+    "test_kl": 0.02372134104371071,
+    "test_mse": 299.0174560546875,
+    "test_rank_loss": 0.6978381872177124,
+    "test_rank_weight": 0.1,
+    "test_rmse": 17.29212188720703,
+    "test_spearman": 0.0,
+    "test_pearson": -0.5340674519538879,
+    "test_top_hit": 1.0
+  }
+}

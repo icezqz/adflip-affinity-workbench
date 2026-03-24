@@ -1,0 +1,12 @@
+{
+  "dataset_name": "Warszawski2019_d44_Kd",
+  "list_size": 12,
+  "batch_size": 1,
+  "train_samples_after_fewshot": 1638,
+  "train_groups_after_fewshot": 137,
+  "val_groups": 17,
+  "train_rows": 1638,
+  "val_rows": 204,
+  "config_path": "/home/wyy/my_work/adflip_affinity/affinity/configs/base.yaml",
+  "best_model_path": "/home/wyy/my_work/adflip_affinity/artifacts/single_dataset/Warszawski2019_d44_Kd/best.ckpt"
+}

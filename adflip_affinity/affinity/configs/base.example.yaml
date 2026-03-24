@@ -1,0 +1,53 @@
+adflip_root: ../../ADFLIP
+adflip_ckpt: ../../ADFLIP/results/weights/ADFLIP_ICML_camera_ready.pt
+
+data:
+  manifest: ./outputs/prepared/manifest.csv
+  dataset_name: Koenig2017_g6_Kd
+  eval_csv: ""
+
+  train_csv: ""
+  val_csv: ""
+  test_csv: ""
+  pdb_dir: ""
+  pdb_col: pdb
+  y_col: KD
+  seq_col: sequence
+  label_mode: neg_log10
+  chains: ["H", "L"]
+
+model:
+  freeze_backbone: true
+  timestep: 0.0
+  affinity_head_use_lightattn: true
+  affinity_head_lightattn_dropout: 0.2
+
+training:
+  seed: 42
+  epochs: 15
+  batch_size: 1
+  list_size: 12
+  num_workers: 0
+  learn_rate: 0.0001
+  backbone_learn_rate: 0.00001
+  tau_true: 1.0
+  tau_pred: 1.0
+  kl_weight: 1.0
+  mse_weight: 0.05
+  rank_weight: 0.1
+  rank_margin: 0.0
+  rank_tie_eps: 1.0e-8
+  rank_warmup_epochs: 3
+  topk: 5
+  checkpoint_monitor: val_spearman
+  checkpoint_mode: max
+
+  few_shot_enabled: false
+  few_shot_frac: 1.0
+  few_shot_n_samples: 0
+  few_shot_seed: 42
+
+  ckpt_dir: ./outputs/checkpoints
+  log_dir: ./outputs/logs
+  silent: false
+  plot_curves: true
